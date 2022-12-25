@@ -1,0 +1,277 @@
+.box {
+  width: 100%;
+  align-items: center;
+  height: 50px;
+
+  color: var(--bg-3-dark-grey);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.data-box {
+  width: 100%;
+  flex-direction: column;
+}
+
+.data-container {
+  width: 50%;
+}
+
+.topic, .data-topic {
+  font-size: 14px;
+  font-family: monospace;
+  width: 50%;
+}
+
+.data {
+  font-size: 18px;
+}
+
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  font-family: "Baloo 2", serif;
+  width: 100%;
+  height: auto;
+  display: flex;
+  //background: var(--bg);
+}
+
+.resume_left {
+  width: 26%;
+  background: var(--bg-2-grey);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  //border-left: 5px solid var(--landing-3);
+  border-top: 5px solid var(--landing-4);
+  box-sizing: border-box;
+  height: 100%;
+  border-radius: 0 0 0 20px;
+  border-left: 5px solid var(--bg-2-grey);
+  border-right: 5px solid var(--bg-2-grey);
+}
+
+.resume_right {
+  width: 74%;
+}
+
+.resume_profile {
+  width: 100%;
+}
+
+.resume_profile img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 0 0 20px 20px;
+
+  box-sizing: border-box;
+}
+
+.resume_content {
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.title-right{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.title-left{
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-family: 'Francois One', sans-serif;
+  width: 100%;
+}
+
+.svg-eye{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--dark-grey-text);
+  //color: var(--landing-4);
+}
+
+.bold {
+  color: var(--landing-2);
+}
+
+.regular {
+  color: var(--landing-5);
+  font-family: 'Francois One', sans-serif;
+  font-size: 24px;
+}
+
+.resume_item {
+  padding: 25px 0;
+  border-bottom: 3px solid var(--grey-text);
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume_right {
+  padding: 25px;
+  //border-bottom: 5px solid var(--landing-3);
+}
+
+.bold {
+  color: var(--bg-3-dark-grey);
+  //color: var(--landing-4);
+  width: 100px;
+}
+
+.exp{
+  width: 210px;
+}
+
+.soft{
+  width: 105px;
+}
+
+
+.name {
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--bg-3-dark-grey);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  height: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+
+  margin-bottom: 15px;
+
+  background: var(--bg-2-grey);
+  border-radius: 20px;
+}
+
+
+
+.skills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills, .lang {
+  background: var(--bg-2-grey);
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.lang {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.skills img, .lang img {
+  max-height: 30px;
+  width: 30px;
+  margin: 7px;
+}
+
+.info-skills {
+  color: var(--dark-grey-text);
+  font-family: monospace;
+}
+
+.lang-container {
+  display: flex;
+  align-items: center;
+  color: var(--dark-grey-text);
+  font-weight: 500;
+}
+
+.skill-box {
+  border: var(--grey-text) 5px solid;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.soft-skill-box {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
+  border: var(--bg-2-grey) solid 5px;
+  font-size: 20px;
+  color: var(--bg-3-dark-grey);
+  font-weight: 500;
+  text-transform: lowercase;
+  font-family: monospace;
+}
+
+.content-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soft-skill-box:nth-child(2) {
+  background: var(--landing-2);
+}
+
+.soft-skill-box:nth-child(3) {
+  background: var(--landing-1);
+}
+
+.soft-skill-box:nth-child(4) {
+  background: var(--landing-4);
+}
+
+.soft-skill-box:nth-child(5) {
+  background: var(--landing-5);
+}
+
+.soft-skill-box:nth-child(6) {
+  background: var(--landing-3);
+}
+
+
+.skill-box:nth-child(1) {
+  background: var(--landing-2);
+}
+
+.skill-box:nth-child(2) {
+  background: var(--landing-1);
+}
+
+.skill-box:nth-child(3) {
+  background: var(--landing-5);
+}
+
+.skill-box:nth-child(4) {
+  background: var(--landing-3);
+}
+
+
+
+
+

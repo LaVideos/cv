@@ -1,0 +1,89 @@
+.c {
+  width: 227px;
+  height: 456px;
+  border-radius: 12px;
+  padding: 20px 20px 40px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.ci {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: inherit;
+  height: inherit;
+  transform-origin: left 50%;
+
+  background: inherit;
+
+  z-index: var(--z);
+  transition: .3s ease-out;
+}
+
+.ci img {
+  width: 227px;
+  height: 456px;
+}
+
+input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -10;
+}
+
+.c label {
+  width: 10%;
+  height: 10px;
+  margin-right: 4px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: -20px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  z-index: 10;
+  background: var(--landing-3);
+  //box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px,
+  //rgb(31, 193, 27) 0px 0px 0px 6px,
+  //rgb(255, 217, 19) 0px 0px 0px 9px,
+  //rgb(255, 156, 85) 0px 0px 0px 12px,
+  //rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+
+
+.c label:last-child {
+  margin-right: 0;
+}
+
+.c input:checked+label {
+  background: linear-gradient(to right,
+          hsla(var(--hue) 80% 70% / .7),
+          hsla(calc(var(--hue) + 30) 80% 50% / .7));
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
+}
+
+.c input:not(:checked)+label+.ci {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.c input:checked+label+.ci~.ci {
+  transform: translateX(100%);
+}
+
+.c input:not(:checked)+label+.ci {
+  transition: 0ms;
+}

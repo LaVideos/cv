@@ -1,0 +1,132 @@
+$timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+
+.sidebar-box{
+  min-width: 300px;
+  height: 100vw;
+  z-index: 100;
+  position: fixed;
+  left: 80px;
+}
+
+.sidebar-container {
+  z-index: 100;
+  position: fixed;
+  min-width: 300px;
+  height: 100%;
+  transform: skewX(10deg);
+  transform-origin: bottom left;
+  will-change: transform;
+  transition: transform .5s $timing-function;
+}
+
+.link-container {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 120;
+  position: fixed;
+  //top: 20%;
+  //right: 90%;
+  top: 170px;
+  left: -80px;
+}
+
+
+.blob {
+  z-index: 101;
+
+}
+
+.blob-1 {
+  position: absolute;
+  height: 700px;
+  top: -130px;
+  right: -200px;
+  transition: left 0.5s, top 0.5s;
+}
+
+.blob-2 {
+  position: absolute;
+  height: 700px;
+  top: 230px;
+  right: -200px;
+  rotate: 20deg;
+  transition: left 0.5s, top 0.5s;
+}
+
+.blob-3 {
+  position: absolute;
+  height: 700px;
+  top: 400px;
+  right: -100px;
+  rotate: 20deg;
+  transition: left 0.5s, top 0.5s;
+}
+
+.blob-4 {
+  position: absolute;
+  height: 700px;
+  top: 400px;
+  right: -500px;
+  rotate: 20deg;
+  //filter: drop-shadow(10px 20px 5px var(--landing-2));
+  transition: left 0.5s, top 0.5s;
+}
+
+.blob-5 {
+  position: absolute;
+  min-height: 700px;
+  top: 250px;
+  right: -300px;
+  rotate: 20deg;
+  //filter: drop-shadow(10px 20px 5px var(--landing-2));
+  transition: left 0.5s, top 0.5s;
+}
+
+.blob-6{
+  position: absolute;
+  min-height: 700px;
+  top: 650px;
+  right: -280px;
+  rotate: 20deg;
+  //filter: drop-shadow(10px 20px 5px var(--landing-2));
+  transition: left 0.5s, top 0.5s;
+}
+
+.blob-7{
+  position: absolute;
+  min-height: 400px;
+  top: 400px;
+  right: -680px;
+  rotate: 180deg;
+  //filter: drop-shadow(10px 20px 5px var(--landing-2));
+  transition: left 0.5s, top 0.5s;
+}
+
+.link-box{
+  padding: 25px;
+  border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+}
+
+.link-box a{
+  font-family: "Baloo 2", serif;
+  color: var(--grey-text);
+  text-decoration: none;
+  font-size: 20px;
+  transition: 500ms ease-in-out;
+  border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+}
+
+.link-box a:hover {
+  padding: 10px;
+  background: var(--dark-grey-text);;
+  color: var(--grey-text);
+}
+
+.nav a[class='active']{
+  padding: 20px;
+  background: var(--grey-text);;
+  color: var(--dark-grey-text);
+  font-size: 32px;
+}

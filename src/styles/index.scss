@@ -1,0 +1,28 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Francois+One&family=Paytone+One&display=swap');
+
+body {
+  margin: 0;
+  //font-family: 'Baloo 2', cursive;
+  //font-family: 'Francois One', sans-serif;
+  //font-family: 'Paytone One', sans-serif;
+  //font-family: monospace;
+  font-family: 'Baloo 2', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg);
+
+  overflow-x:hidden;
+
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

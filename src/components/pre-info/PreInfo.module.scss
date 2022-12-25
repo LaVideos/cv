@@ -1,0 +1,32 @@
+.pre-info-component{
+  //background: #525252;
+  width: 50%;
+  font-size: 26px;
+
+  //color: #575757;
+}
+
+.i-am-container{
+  padding-left: 10px;
+  //background: var(--bg-2-grey);
+  //background: #e1e0e0;
+  color: var(--dark-grey-text);
+  font-family: monospace;
+}
+
+.frontend-developer,.cv{
+  font-size: 24px;
+  font-family: 'Francois One', sans-serif;
+  //font-family: 'Paytone One', sans-serif;
+  border-bottom: var(--purple) 10px solid;
+  color: var(--black);
+
+}
+
+.check-topic-text{
+  margin-top: 10px;
+  padding-left: 10px;
+  //background: var(--bg-3-dark-grey);
+  color: var(--grey-text);
+  font-size: 16px;
+}

@@ -1,0 +1,134 @@
+.footer-container,.list-of-number-content,.title,.deploys-by-container,.created-by-box,.code-icon{
+  display: flex;
+}
+
+.footer-container,.created-by-box,.code-icon{
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer-container{
+  flex-direction: column;
+
+  background: var(--bg-3-dark-grey);
+  color:var(--grey-text);
+  height: 400px;
+
+  font-family: monospace;
+
+  bottom: 0;
+}
+
+//font-family: 'Baloo 2', cursive;
+//font-family: 'Francois One', sans-serif;
+//font-family: 'Paytone One', sans-serif;
+//font-family: monospace;
+
+.list-of-number-content,.icon-a,.deploys-by-container{
+  margin-top: 15px;
+  margin-bottom:15px;
+}
+
+.deploys-by-container{
+  font-family: 'Francois One', sans-serif;
+}
+
+.list-of-number-content{
+  list-style: none;
+
+}
+
+
+.number-of-content{
+  padding: 5px 10px 5px 5px;
+  color: var(--dark-grey-text);
+  font-size: 17px;
+  background: var(--bg-2-grey);
+  border-radius: 20px;
+}
+
+.content{
+  width: 90%;
+  animation: flashin-border .75s step-start infinite;
+  border-right: 3px solid var(--color-text);
+}
+
+.element-of-content{
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-right: 20px;
+  letter-spacing: 1px;
+}
+
+.icon-a{
+  font-size: 20px;
+}
+
+.link-web{
+  margin-right: 20px;
+  margin-left: 20px;
+  color: var(--grey-text);
+  transition: 300ms ease-in-out;
+}
+
+.link-web:hover{
+  color: var(--purple);
+}
+
+.deploys-by-container{
+  flex-direction: row;
+}
+
+.git-icon,.github{
+  color: var(--grey-text);
+}
+
+.git-icon{
+  font-size: 50px;
+}
+
+.title{
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+
+.deploy-by-text{
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.github{
+  font-weight: 500;
+}
+
+
+.code-icon{
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.name{
+  margin-right: 5px;
+  margin-left: 5px;
+
+  border-bottom: 10px solid var(--purple);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+
+@keyframes flashin-border{
+  0%{
+    border-color: var(--color-text);
+  }
+  50%{
+    border-color: transparent;
+  }
+  100%{
+    border-color: var(--color-text);
+  }
+}

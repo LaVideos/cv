@@ -1,0 +1,77 @@
+
+
+:root {
+  --axis-x: 1px;
+  --axis-y: 1rem;
+  --delay: 10;
+
+  --color-black: var(--bg-3-dark-grey);
+  --color-white: var(--bg);
+  --color-orange: var(--landing-3);
+  --color-red: var(--landing-1);
+  --color-violet: var(--purple);
+  --color-blue: var(--landing-4);
+  --color-green: var(--landing-2);
+  --color-yellow: var(--landing-5);
+
+  --color-foreground: var(--color-white);
+}
+
+
+.c-rainbow {
+  counter-reset: rainbow;
+  position: relative;
+  display: block;
+
+
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+
+  &__layer {
+    --text-color: var(--color-foreground);
+    counter-increment: rainbow;
+    color: var(--text-color);
+
+    text-shadow:
+            -1px -1px 0 var(--color-black),
+            1px -1px 0 var(--color-black),
+            -1px 1px 0 var(--color-black),
+            1px 1px 0 var(--color-black),
+
+            4px 4px 0 rgba(0, 0, 0, .2);
+
+    animation: rainbow 1.5s ease-in-out infinite;
+
+    @for $i from 1 through 7 {
+      &:nth-child(#{$i}) {
+        animation-delay: calc( #{$i} / var(--delay) * 1s);
+        left: calc(var(--axis-x) * #{$i});
+        z-index: -#{$i * 10};
+      }
+    }
+
+    &:not(:first-child) {
+      position: absolute;
+      top: 0;
+    }
+
+    &--white  { --text-color: var(--color-white)}
+    &--orange { --text-color: var(--color-orange)}
+    &--red    { --text-color: var(--color-red)}
+    &--violet { --text-color: var(--color-violet)}
+    &--blue   { --text-color: var(--color-blue)}
+    &--green  { --text-color: var(--color-green)}
+    &--yellow { --text-color: var(--color-yellow)}
+  }
+}
+
+@keyframes rainbow {
+  0%, 100% {
+    transform: translatey(var(--axis-y));
+  }
+  50% {
+    transform: translatey(calc(var(--axis-y) * -1));
+  }
+}

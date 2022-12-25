@@ -1,0 +1,235 @@
+.experience-container{
+  width: 100%;
+}
+
+.data-topic,.title,.subtitle,.is-project-deploy{
+  font-family: monospace;
+}
+
+.project-container,.dont-have-exp,.title,.data-box,.data-box-2,.is-project-deploy{
+  border-radius: 20px;
+}
+
+.data-box-container{
+display: flex;
+  height: 400px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container-data,.swiper,.data-box-2,.data-box-2 li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-container,.dont-have-exp{
+  margin: 10px;
+}
+
+.is-project-deploy,.project-container{
+  padding: 20px;
+}
+
+.data-topic{
+  font-size: 14px;
+  width: 50%;
+}
+
+.project-container{
+  width: 80%;
+  color: var(--dark-grey-text);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.project-container{
+  background: var(--bg-2-grey);
+  transition: 500ms;
+}
+
+.project-container:hover{
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  //box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+
+}
+
+
+.dont-have-exp{
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  background: var(--bg-2-grey);
+  color: var(--dark-grey-text);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+.title{
+  width: 400px;
+  font-size: 30px;
+  font-weight: 500;
+  //color: var(--dark-grey-text);
+  --text-color: var(--grey-text);
+  color: var(--text-color);
+
+  text-shadow:
+          -1px -1px 0 var(--color-black),
+          1px -1px 0 var(--color-black),
+          -1px 1px 0 var(--color-black),
+          1px 1px 0 var(--color-black),
+
+          4px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.subtitle{
+  color: var(--dark-grey-text);
+  margin-top: 5px;
+}
+
+.container-data a{
+  text-decoration: none;
+  color: var(--landing-4);
+  font-weight: 600;
+}
+
+.data-box,.data-box-2{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.data-box,.data-box-2{
+  color: var(--dark-grey-text);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  background: var(--bg);
+}
+
+.data-box-2{
+  list-style-type: none;
+  height: 100px;
+  flex-wrap: wrap;
+}
+
+.pdf-download{
+  color: var(--landing-4);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.swiper{
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.data-box-2 li{
+  margin: 5px;
+}
+
+.img{
+  width: 30px;
+  max-height: 30px;
+  margin-left: 5px;
+}
+
+.img-pic{
+  width: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.is-project-deploy{
+  background: var(--bg-3-dark-grey);
+  color: var(--grey-text);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  transition: 500ms ease-in-out;
+
+}
+
+
+.is-project-deploy:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-box-game{
+  margin-right: 20px;
+  height: 40%;
+}
+
+.download-container{
+  width: 200px;
+  text-align: center;
+  background: var(--bg-2-grey);
+  border-radius: 20px;
+  color: var(--landing-4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 5px solid var(--landing-4);
+
+  cursor: pointer;
+
+  font-family: monospace;
+
+  font-size: 20px;
+
+  font-weight: 400;
+
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
+  transition: 300ms;
+}
+
+.apk-download .download-container:hover{
+  border: 5px solid var(--landing-5);
+  color: var(--landing-5);
+  svg{
+    fill: var(--landing-5);
+  }
+}
+
+.apk-download .download-container:active{
+  border: 5px solid var(--landing-2);
+  color: var(--landing-2);
+  svg{
+    fill: var(--landing-2);
+  }
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.download-container svg{
+  width: 20px;
+  height: 20px;
+  fill: var(--landing-4);
+  margin-left: 10px;
+  transition: 300ms;
+}
+
+.project-container:nth-child(2) .is-project-deploy {
+  border: 5px solid var(--landing-4);
+}
+.project-container:nth-child(3) .is-project-deploy {
+  border: 5px solid var(--landing-5);
+}
+.project-container:nth-child(4) .is-project-deploy {
+  border: 5px solid var(--landing-1);
+}
+.project-container:nth-child(5) .is-project-deploy {
+  border: 5px solid var(--landing-2);
+}
+
+
+

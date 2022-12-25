@@ -1,0 +1,37 @@
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  padding-top: 20%;
+}
+
+.title{
+  width: 21ch;
+  overflow: hidden;
+  color: var(--color-text);
+  font-size: 60px;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid var(--border);
+  animation: printed-text 5s steps(21),
+  flashin-border .75s step-start infinite;
+}
+
+@keyframes flashin-border{
+  0%{
+    border-color: var(--border);
+  }
+  50%{
+    border-color: transparent;
+  }
+  100%{
+    border-color: var(--border);
+  }
+}
+
+@keyframes printed-text{
+  from {
+    width: 0%;
+  }
+}

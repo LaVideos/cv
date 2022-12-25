@@ -1,0 +1,52 @@
+
+.main-layout-container{
+}
+
+.print-container{
+  height: 70%;
+}
+
+.landing-container{
+  height: 200px;
+  position: relative;
+  background: #7ebb8c;
+}
+
+
+.hover-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 520px;
+}
+
+.layout-container{
+  padding: 20px;
+  z-index: 1000;
+}
+
+.pre-info-container{
+  height: 120px;
+}
+
+.hover-container{
+  width: 100%;
+  padding-top: 100px;
+}
+
+.hover-text{
+  font-family: monospace;
+  color: var(--color-text);
+  transition: 500ms ease;
+  font-size: 30px;
+}
+
+.data-box{
+  display: flex;
+}
+
+.blur{
+  filter: blur(5px);
+}

@@ -1,0 +1,37 @@
+
+.download-container{
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+}
+
+.blur{
+  filter: blur(5px);
+}
+
+
+.svg svg{
+  width: 50px;
+  height: 50px;
+  fill: var(--dark-grey-text);
+  font-size: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+//font-family: 'Paytone One', sans-serif;
+
+.download{
+  font-size: 20px;
+  margin-right: 5px;
+  //font-family: 'Baloo 2', cursive;
+  //font-family: monospace;
+
+  transition: 500ms;
+  font-family: 'Francois One', sans-serif;
+background: var(--bg-2-grey);
+  padding: 5px;
+  border-radius: 20px;
+  color: var(--dark-grey-text);
+}

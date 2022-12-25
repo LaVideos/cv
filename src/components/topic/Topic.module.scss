@@ -1,0 +1,33 @@
+.topic-container{
+  list-style-type: none;
+  width: 30%;
+}
+
+
+.topic-container li:nth-child(2n){
+  background: var(--bg-3-dark-grey);
+  color: var(--grey-text);
+}
+
+.topic-container li:nth-child(2n+1){
+  background: var(--bg-2-grey);
+  color: var(--dark-grey-text);
+}
+
+.topic-container svg{
+  font-size: 20px;
+  color: inherit;
+}
+
+.topic-section{
+  padding: 5px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text{
+  border-bottom: 10px solid var(--purple);
+  font-weight: 600;
+}
