@@ -5,7 +5,7 @@ import {MainPage, ResumePage} from "../pages";
 export const AppRouter = () => {
     return (
         <Routes>
-            <Route path={'/profile'} element={<MainLayout/>}>
+            <Route path={'/cv/profile'} element={<MainLayout/>}>
     <Route path={'about'} index element={<MainPage/>}></Route>
     <Route path={'resume'} element={<ResumePage/>}>
     </Route>

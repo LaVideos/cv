@@ -85,7 +85,7 @@ const BgComponent = () => {
                     </div>
                 {/*</div>*/}
 
-            {pathname==='/profile/resume'&&
+            {pathname==='cv/profile/resume'&&
                 // <div className={cn('box')}>
                 <>
                     <div className={cn('wave1', 'one',isBurgerActive&&'blur')}></div>

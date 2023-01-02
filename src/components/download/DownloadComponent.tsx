@@ -20,7 +20,7 @@ const DownloadComponent = () => {
     return (
         <>
             {
-                pathname==='/profile/resume'&&
+                pathname==='/cv/profile/resume'&&
                 <div className={cn('download-container',isBurgerActive&&'blur')}>
                 {hover &&
                     <span className={cn('download', 'animate__animated', 'animate__tada')}>Download CV in pdf</span>}

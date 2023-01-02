@@ -17,7 +17,7 @@ const MainLayout = () => {
    const {isBurgerActive,isAnimationPrintOff} = useAppSelector(state => state.controllers);
 
    return <>
-      { (isAnimationPrintOff || (pathname==='/profile/resume')||isBurgerActive) &&<Header/>}
+      { (isAnimationPrintOff || (pathname==='/cv/profile/resume')||isBurgerActive) &&<Header/>}
       {isBurgerActive&&<Sidebar/>}
       <Body/>
    </>

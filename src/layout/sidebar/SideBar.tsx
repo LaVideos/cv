@@ -12,10 +12,10 @@ export const Sidebar = ()=>  {
         <div className={cn('link-container')}>
             <div className={cn('nav')}>
 
-                <div className={cn('link-box')}><NavLink to={'/profile/about'}>About
+                <div className={cn('link-box')}><NavLink to={'/cv/profile/about'}>About
                 </NavLink></div>
 
-                <div className={cn('link-box')}><NavLink to={'/profile/resume'}>
+                <div className={cn('link-box')}><NavLink to={'/cv/profile/resume'}>
                     Resume
                 </NavLink></div>
             </div>
