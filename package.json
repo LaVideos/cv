@@ -2,6 +2,7 @@
   "name": "cv",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lavideos.github.io/profile/about",
   "dependencies": {
     "@emotion/styled": "^11.10.4",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -40,7 +41,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -65,6 +68,7 @@
     "@types/react-burger-menu": "^2.8.3",
     "@types/react-mdl": "^1.7.31",
     "awesome-react-icons": "^1.4.8",
+    "gh-pages": "^4.0.0",
     "js-file-download": "^0.4.12"
   }
 }
