@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/cv/static/css/main.2ef46a61.css",
-    "main.js": "/cv/static/js/main.47cc65d4.js",
+    "main.js": "/cv/static/js/main.af371a16.js",
     "static/media/Arcade.apk": "/cv/static/media/Arcade.798f0ea5a90a57eb6991.apk",
     "static/media/firstPageDown.png": "/cv/static/media/firstPageDown.cbe7a9389b40388acfdb.png",
-    "static/media/_MG_1690.png": "/cv/static/media/_MG_1690.0b9c3b282fb7cae78375.png",
+    "static/media/avatar.png": "/cv/static/media/avatar.0b9c3b282fb7cae78375.png",
     "static/media/downPagination.png": "/cv/static/media/downPagination.c22fec59542bb6ff3ca6.png",
     "static/media/rec.png": "/cv/static/media/rec.85f46eaab49fcde06f1d.png",
     "static/media/firstPageUp.png": "/cv/static/media/firstPageUp.f2d2aa4ac08469c99590.png",
@@ -60,10 +60,10 @@
     "static/media/angular.svg": "/cv/static/media/angular.28ae4f3c6c193d04113e4767a73b86bc.svg",
     "static/media/vue.svg": "/cv/static/media/vue.f04dfe30a8ad8eb5c4e01aaf1163cb53.svg",
     "main.2ef46a61.css.map": "/cv/static/css/main.2ef46a61.css.map",
-    "main.47cc65d4.js.map": "/cv/static/js/main.47cc65d4.js.map"
+    "main.af371a16.js.map": "/cv/static/js/main.af371a16.js.map"
   },
   "entrypoints": [
     "static/css/main.2ef46a61.css",
-    "static/js/main.47cc65d4.js"
+    "static/js/main.af371a16.js"
   ]
 }
