@@ -8,7 +8,7 @@ export const AppRouter = () => {
     const navigate = useNavigate();
 
     useEffect(()=>{
-        if(pathname==='/cv'){
+        if(pathname==='/cv'||pathname==='/cv/'){
             navigate('/cv/profile/about')
         }
     },[pathname])
