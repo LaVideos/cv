@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import avatar from '../../assets/jpeg/_MG_1690.png'
+import avatar from '../../assets/jpeg/avatar.png'
 import english from '../../assets/png/lang/united-kingdom.png'
 import ukrainian from '../../assets/png/lang/ukraine.png'
 
@@ -95,7 +95,7 @@ const AboutMeComponent = () => {
         <div className={cn('resume_left')}>
 
             <div className={cn('resume_profile')}>
-                <img src={avatar} alt="profile_pic"/>
+                <img src={avatar} alt=""/>
             </div>
             <div className={cn('resume_content')}>
                 <div className={cn('resume_item','resume_info')}>
