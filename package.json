@@ -2,7 +2,7 @@
   "name": "cv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lavideos.github.io/cv/profile/about",
+  "homepage": "https://lavideos.github.io/cv",
   "dependencies": {
     "@emotion/styled": "^11.10.4",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
